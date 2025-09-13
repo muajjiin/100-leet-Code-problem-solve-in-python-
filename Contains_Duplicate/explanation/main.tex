@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{minted}
+
+\title{ContainsDuplicate}
+\begin{document}
+\maketitle
+\section{Problem}
+Given an integer array nums, return  \textbf{true} if any value appears at least twice in the array, and return \texttt{false} if every element
+\begin{center}
+\textbf{\Large\underline{Solution}}.
+\end{center}
+\begin{minted}{python}
+class Solution:
+        def containsDuplicate(self,nums:List[int])->bool;
+        hashset = set()
+
+
+        for n in nums:
+            if n in hashset:
+                return True
+            hashset.add(n)
+        return False
+\end{minted}
+
+
+\end{document}
